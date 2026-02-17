@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ai-code-assistant
+  namespace: ai
+  title: AI Code Assistant
+  description: |
+    An intelligent code assistant that helps developers write better code faster.
+    Uses GPT-4 to provide code suggestions, documentation, and refactoring.
+  tags:
+    - ai
+    - development
+    - assistant
+  annotations:
+    ai.redhat.com/category: "Agent"
+    ai.redhat.com/usecase: "Development"
+    ai.redhat.com/owner: "jbarea"
+    ai.redhat.com/domain: "internal"
+    ai.redhat.com/status: "active"
+    ai.redhat.com/featured: "true"
+    github.com/project-slug: JuanmaBM/ai-code-assistant
+    backstage.io/source-location: url:https://github.com/JuanmaBM/ai-code-assistant/
+spec:
+  type: service
+  lifecycle: production
+  owner: user:default/guest
+  system: system:ai/redhat-ai

@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: ai-showcase-catalog
+  description: AI Showcase projects catalog
+spec:
+  type: url
+  targets:
+    - https://github.com/JuanmaBM/ai-showcase-test/blob/main/entities/ai/components/ai-code-assistant/ai-code-assistant.yaml
+    - https://github.com/JuanmaBM/ai-showcase-test/blob/main/entities/ai/components/document-analyzer/document-analyzer.yaml
+    - https://github.com/JuanmaBM/ai-showcase-test/blob/main/entities/ai/components/test-generator/test-generator.yaml

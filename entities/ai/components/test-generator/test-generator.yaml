@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-generator
+  namespace: ai
+  title: AI Test Generator
+  description: |
+    Automatically generates unit tests for your codebase using AI.
+    Supports Python, JavaScript, TypeScript, and Java.
+  tags:
+    - ai
+    - testing
+    - automation
+  annotations:
+    ai.redhat.com/category: "Tool"
+    ai.redhat.com/usecase: "Testing"
+    ai.redhat.com/owner: "jbarea"
+    ai.redhat.com/domain: "internal"
+    ai.redhat.com/status: "active"
+    ai.redhat.com/featured: "true"
+    github.com/project-slug: JuanmaBM/test-generator
+    backstage.io/source-location: url:https://github.com/JuanmaBM/test-generator/
+spec:
+  type: service
+  lifecycle: production
+  owner: user:default/guest
+  system: system:ai/redhat-ai

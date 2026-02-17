@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: document-analyzer
+  namespace: ai
+  title: Document Analyzer
+  description: |
+    AI-powered document analysis tool that extracts insights from technical documentation.
+    Supports multiple formats including PDF, Markdown, and HTML.
+  tags:
+    - ai
+    - documentation
+    - analysis
+  annotations:
+    ai.redhat.com/category: "Tool"
+    ai.redhat.com/usecase: "Documentation"
+    ai.redhat.com/owner: "jbarea"
+    ai.redhat.com/domain: "internal"
+    ai.redhat.com/status: "active"
+    ai.redhat.com/featured: "false"
+    github.com/project-slug: JuanmaBM/document-analyzer
+    backstage.io/source-location: url:https://github.com/JuanmaBM/document-analyzer/
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/guest
+  system: system:ai/redhat-ai
